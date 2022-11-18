@@ -231,7 +231,10 @@ def main():
     global config
 
     parser = ArgumentParser()
-    parser.add_argument('ROOT')
+    parser.add_argument('-c', dest='ROOT')
+    parser.add_argument('-s')
+    parser.add_argument('-p')
+    parser.add_argument('-b')
     parser.add_argument('IMAGE')
     args = parser.parse_args()
 
